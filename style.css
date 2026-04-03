@@ -3,7 +3,25 @@ body{
 	   and use the OS’s UI font as the website font
 	 */
     font:100%/1.5 system-ui;
+    margin: 0;
+    padding: 1rem;
+    overflow-wrap: break-word;
 }
+
+* {
+    box-sizing: border-box;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+nav a {
+    display: inline-block;
+}
+
 img {
     width: 100%;
     max-width: 700px;
