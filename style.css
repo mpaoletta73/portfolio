@@ -5,7 +5,8 @@ body{
     font:100%/1.5 system-ui;
 }
 img {
-  max-width: 100%;
-  height: auto;
-  display: block;
+    width: 100%;
+    max-width: 700px;
+    height: auto;
+    display: block;
 }
