@@ -80,18 +80,30 @@ button {
 
 .projects {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(15em, 1fr));
-  gap: 1em;
+  grid-template-columns: repeat(auto-fill, minmax(18em, 1fr));
+  gap: 1.5em;
 }
 
 .projects article {
   display: grid;
   grid-template-rows: subgrid;
   grid-row: span 3;
+  gap: 0.75em;
+  align-content: start;
 }
 
 .projects h2 {
   margin: 0;
+  font-size: 1.6rem;
+}
+
+.projects p {
+  margin: 0;
+}
+
+.project-link {
+  display: inline-block;
+  margin-top: 0.75em;
 }
 
 h1 {
