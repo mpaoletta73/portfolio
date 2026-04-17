@@ -7,29 +7,18 @@
     <link rel="stylesheet" href="../style.css">
 </head>
 <body>
-    
-    <nav>
-        <a href="../index.html">Home</a>
-        <a href="../projects/index.html">Projects</a>
-        <a href="../contact/index.html" class="current">Contact</a>
-        <a href="../cv.html">Resume</a>
-        <a href="https://github.com/mpaoletta73" target="_blank" rel="noopener noreferrer">GitHub</a>
-    </nav>
     <h1>Contact</h1>
-    <form action="mailto:mpaoletta@ucsd.edu" method="POST" enctype="text/plain">
-        <label for="email">
-            Email:
-            <input type="email" name="email" value="student@example.com">
-        </label>
+    <form action="mailto:mpaoletta@ucsd.edu">
         <label for="subject">
             Subject:
-            <input name="subject" value="Website Contact">
+            <input id="subject" name="subject" value="Website Contact">
         </label>
         <label for="body">
             Message:
-            <textarea name="body">Hi Matthew, I saw your portfolio and wanted to reach out.</textarea>
+            <textarea id="body" name="body" rows="6">Hi Matthew, I saw your portfolio and wanted to reach out.</textarea>
         </label>
-        <button>Send</button>
+        <button type="submit">Send</button>
     </form>
+    <script type="module" src="../global.js"></script>
 </body>
 </html>
