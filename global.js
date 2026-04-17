@@ -72,17 +72,25 @@ select.addEventListener('input', function (event) {
 });
 
 const form = document.querySelector('form');
+const formStatus = document.createElement('p');
+formStatus.className = 'form-status';
+form?.after(formStatus);
 
 form?.addEventListener('submit', function (event) {
   event.preventDefault();
 
   const data = new FormData(form);
-  const params = [];
+  const params = new URLSearchParams();
 
   for (let [name, value] of data) {
-    params.push(`${name}=${encodeURIComponent(value)}`);
+    params.set(name, value);
   }
 
-  const url = `${form.action}?${params.join('&')}`;
-  location.href = url;
+  const url = `${form.action}?${params.toString()}`;
+
+  formStatus.innerHTML = `Opening your email app… If nothing happens, <a href="${url}">click here</a>.`;
+
+  requestAnimationFrame(() => {
+    window.location.href = url;
+  });
 });
