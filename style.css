@@ -112,11 +112,7 @@ button {
   margin-top: 0.75em;
 }
 
-.project-year {
-  font-size: 0.85rem;
-  color: color-mix(in oklch, canvastext, canvas 40%);
-  margin: 0;
-}
+
 
 h1 {
   font-size: 400%;
