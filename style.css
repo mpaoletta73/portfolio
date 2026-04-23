@@ -143,3 +143,62 @@ ul {
 .form-status {
   margin-top: 1em;
 }
+
+#profile-stats {
+  margin-block: 1rem 2rem;
+}
+
+#profile-stats dl {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 0.5rem 1rem;
+  margin: 0;
+  padding: 1rem;
+  border: 1px solid color-mix(in oklch, var(--color-accent), canvas 75%);
+  border-radius: 0.5rem;
+}
+
+#profile-stats dt,
+#profile-stats dd {
+  margin: 0;
+  text-align: center;
+}
+
+#profile-stats dt {
+  grid-row: 1;
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: color-mix(in oklch, canvastext, canvas 30%);
+}
+
+#profile-stats dd {
+  grid-row: 2;
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+@media (max-width: 700px) {
+  #profile-stats dl {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  #profile-stats dt:nth-of-type(1),
+  #profile-stats dt:nth-of-type(2) {
+    grid-row: 1;
+  }
+
+  #profile-stats dt:nth-of-type(3),
+  #profile-stats dt:nth-of-type(4) {
+    grid-row: 3;
+  }
+
+  #profile-stats dd:nth-of-type(1),
+  #profile-stats dd:nth-of-type(2) {
+    grid-row: 2;
+  }
+
+  #profile-stats dd:nth-of-type(3),
+  #profile-stats dd:nth-of-type(4) {
+    grid-row: 4;
+  }
+}

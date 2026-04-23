@@ -1,0 +1,74 @@
+[
+  {
+    "title": "WebReg2Cal",
+    "year": "2024",
+    "image": "../images/webreg2cal.png",
+    "description": "A Chrome extension that converts UCSD WebReg schedules into a calendar-friendly format for easier planning and organization."
+  },
+  {
+    "title": "Playoff Win Predictor",
+    "year": "2024",
+    "image": "../images/playoff-win-predictor.png",
+    "description": "A data-driven baseball analysis project that predicts playoff game outcomes using historical trends, team statistics, and analytical modeling."
+  },
+  {
+    "title": "The Snowballing Effect",
+    "year": "2023",
+    "image": "../images/snowballing-effect.png",
+    "description": "A predictive analytics project exploring how small early-game advantages can grow over time and influence final match outcomes."
+  },
+  {
+    "title": "Data Dashboard Mockup",
+    "year": "2022",
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "A concept dashboard project focused on turning raw datasets into readable visual summaries."
+  },
+  {
+    "title": "Campus Event Tracker",
+    "year": "2023",
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "A project concept for organizing campus events and presenting schedules in a simple, user-friendly layout."
+  },
+  {
+    "title": "Visualization Study",
+    "year": "2025",
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "An exploratory project for testing chart choices, visual encodings, and communication clarity."
+  },
+  {
+    "title": "Portfolio Redesign Concept",
+    "year": "2025",
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "A redesign concept for a personal site with stronger hierarchy and better responsive behavior."
+  },
+  {
+    "title": "Assignment Tracker",
+    "year": "2021",
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "A planner prototype that helps students organize coursework deadlines across multiple classes."
+  },
+  {
+    "title": "Movie Trends Explorer",
+    "year": "2022",
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "A small data app idea for comparing genres, ratings, and popularity over time."
+  },
+  {
+    "title": "Fitness Log Visualizer",
+    "year": "2024",
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "A concept tool for plotting workout consistency and progress with simple visual summaries."
+  },
+  {
+    "title": "Recipe Recommendation Tool",
+    "year": "2023",
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "A meal planning concept that suggests recipes based on ingredients and dietary preferences."
+  },
+  {
+    "title": "Classroom Sentiment Snapshot",
+    "year": "2026",
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "A concept project for summarizing anonymous student feedback into quick sentiment insights."
+  }
+]
