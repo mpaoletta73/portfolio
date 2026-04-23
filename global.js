@@ -4,7 +4,7 @@ function $$(selector, context = document) {
   return Array.from(context.querySelectorAll(selector));
 }
 
-const BASE_PATH =
+export const BASE_PATH =
   location.hostname === 'localhost' || location.hostname === '127.0.0.1'
     ? '/'
     : '/portfolio/';
@@ -127,13 +127,16 @@ export function renderProjects(projects, containerElement, headingLevel = 'h2') 
   for (let project of projects) {
     const article = document.createElement('article');
     const title = project?.title ?? 'Untitled Project';
-    const image = project?.image ?? 'https://vis-society.github.io/labs/2/images/empty.svg';
+    const rawImage = project?.image ?? 'https://vis-society.github.io/labs/2/images/empty.svg';
+    const image = rawImage.startsWith('http') ? rawImage : BASE_PATH + rawImage;
     const description = project?.description ?? 'No description available.';
+    const year = project?.year ?? '';
 
     article.innerHTML = `
       <${safeHeadingLevel}>${title}</${safeHeadingLevel}>
       <img src="${image}" alt="${title}">
       <p>${description}</p>
+      ${year ? `<p class="project-year">${year}</p>` : ''}
     `;
 
     containerElement.appendChild(article);

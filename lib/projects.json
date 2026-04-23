@@ -2,19 +2,19 @@
   {
     "title": "WebReg2Cal",
     "year": "2024",
-    "image": "../images/webreg2cal.png",
+    "image": "images/webreg2cal.png",
     "description": "A Chrome extension that converts UCSD WebReg schedules into a calendar-friendly format for easier planning and organization."
   },
   {
     "title": "Playoff Win Predictor",
     "year": "2024",
-    "image": "../images/playoff-win-predictor.png",
+    "image": "images/playoff-win-predictor.png",
     "description": "A data-driven baseball analysis project that predicts playoff game outcomes using historical trends, team statistics, and analytical modeling."
   },
   {
     "title": "The Snowballing Effect",
     "year": "2023",
-    "image": "../images/snowballing-effect.png",
+    "image": "images/snowballing-effect.png",
     "description": "A predictive analytics project exploring how small early-game advantages can grow over time and influence final match outcomes."
   },
   {
