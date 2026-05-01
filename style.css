@@ -112,6 +112,74 @@ button {
   margin-top: 0.75em;
 }
 
+.project-body {
+  display: contents;
+}
+
+#projects-pie-plot {
+  max-width: 20em;
+  margin-block: 2em;
+  overflow: visible;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  gap: 2em;
+  flex-wrap: wrap;
+}
+
+.legend {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(9em, 1fr));
+  gap: 0.75em;
+  border: 1px solid color-mix(in oklch, canvastext, canvas 80%);
+  padding: 1em;
+  margin: 0;
+  list-style: none;
+  flex: 1;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.swatch {
+  display: inline-block;
+  width: 1em;
+  aspect-ratio: 1 / 1;
+  background-color: var(--color);
+  border-radius: 3px;
+  flex-shrink: 0;
+}
+
+path {
+  transition: 300ms;
+  cursor: pointer;
+}
+
+#projects-pie-plot:has(path:hover) path:not(:hover) {
+  opacity: 0.5;
+}
+
+.selected {
+  --color: oklch(60% 45% 0) !important;
+}
+
+.selected:is(path) {
+  fill: var(--color);
+}
+
+.project-year {
+  font-family: Baskerville, 'Baskerville Old Face', 'Hoefler Text', Garamond, serif;
+  font-variant-numeric: oldstyle-nums;
+  font-size: 0.85rem;
+  color: oklch(55% 0.02 250);
+  margin: 0;
+}
+
 
 
 h1 {
