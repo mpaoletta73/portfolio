@@ -272,3 +272,114 @@ ul {
     grid-row: 4;
   }
 }
+
+/* ── Meta page: summary stats ── */
+
+dl.stats {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 0.25rem 1rem;
+  margin: 0 0 1.5rem;
+  padding: 1rem;
+  border: 1px solid color-mix(in oklch, var(--color-accent), canvas 75%);
+  border-radius: 0.5rem;
+}
+
+dl.stats dt {
+  margin: 0;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: color-mix(in oklch, canvastext, canvas 35%);
+  align-self: center;
+}
+
+dl.stats dd {
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+/* ── Scatterplot gridlines ── */
+
+.gridlines line {
+  stroke: color-mix(in oklch, canvastext, canvas 80%);
+  stroke-dasharray: 2 4;
+}
+
+.gridlines .domain {
+  display: none;
+}
+
+/* ── Dot hover ── */
+
+circle {
+  transition: 200ms;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+circle:hover {
+  transform: scale(1.5);
+}
+
+circle.selected {
+  fill: #ff6b6b;
+}
+
+/* ── Tooltip ── */
+
+dl.info {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 0.2rem 0.75rem;
+  margin: 0;
+  transition-duration: 500ms;
+  transition-property: opacity, visibility;
+}
+
+dl.info dt {
+  margin: 0;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: color-mix(in oklch, canvastext, canvas 35%);
+}
+
+dl.info dd {
+  margin: 0;
+  font-size: 0.9rem;
+  overflow-wrap: anywhere;
+}
+
+dl.info[hidden]:not(:hover, :focus-within) {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.tooltip {
+  position: fixed;
+  top: 1em;
+  left: 1em;
+  background: color-mix(in oklch, canvas, transparent 10%);
+  backdrop-filter: blur(4px);
+  box-shadow: 0 4px 16px color-mix(in oklch, canvastext, transparent 80%);
+  border-radius: 0.5rem;
+  padding: 0.75rem 1rem;
+  max-width: 22rem;
+  z-index: 100;
+}
+
+/* ── Brush selection rectangle ── */
+
+@keyframes marching-ants {
+  to {
+    stroke-dashoffset: -8;
+  }
+}
+
+.selection {
+  fill-opacity: 0.1;
+  stroke: black;
+  stroke-opacity: 0.7;
+  stroke-dasharray: 5 3;
+  animation: marching-ants 2s linear infinite;
+}
