@@ -1,5 +1,12 @@
 [
   {
+    "title": "Boston Bikewatching",
+    "year": "2026",
+    "image": "images/bikewatching.png",
+    "description": "A geospatial visualization built with Mapbox that maps Boston bike-share station activity. Features data-driven layers and custom SVG overlays that adapt to map panning and zooming, enabling exploration of departure and arrival patterns across the city using large real-world datasets.",
+    "link": "https://mpaoletta73.github.io/Lab-7-Geospatial-Viz/"
+  },
+  {
     "title": "WebReg2Cal",
     "year": "2024",
     "image": "images/webreg2cal.png",

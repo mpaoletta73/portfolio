@@ -133,8 +133,13 @@ export function renderProjects(projects, containerElement, headingLevel = 'h2') 
     const description = project?.description ?? 'No description available.';
     const year = project?.year ?? '';
 
+    const link = project?.link ?? '';
+    const titleContent = link
+      ? `<a href="${link}" target="_blank" rel="noopener noreferrer"><strong>${title}</strong></a>`
+      : `<strong>${title}</strong>`;
+
     article.innerHTML = `
-      <${safeHeadingLevel}><strong>${title}</strong></${safeHeadingLevel}>
+      <${safeHeadingLevel}>${titleContent}</${safeHeadingLevel}>
       <img src="${image}" alt="${title}">
       <div class="project-body">
         <p>${description}</p>
